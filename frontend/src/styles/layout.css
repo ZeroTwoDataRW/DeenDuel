@@ -1,0 +1,220 @@
+.app-root {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.app-shell {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  margin-bottom: 40px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* spacing between Store and Login buttons */
+}
+
+.nav-icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spacing between icon and text */
+  background: rgba(255, 255, 255, 0.06); /* subtle glass look */
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: var(--primary);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.9;
+}
+
+.nav-icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-light);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-icon-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 16px 36px; /* bigger */
+  font-size: 20px;    /* bigger */
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  font-weight: 700;   /* bold like RichUp */
+  box-shadow: 0 6px 20px var(--primary-glow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px var(--primary-glow);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: var(--text-dim);
+  margin-bottom: 30px;
+}
+
+/* Hero-specific sizing */
+.hero-cta {
+  margin-top: 20px;
+  padding: 20px 48px; /* even larger for hero */
+  font-size: 22px;
+}
+
+
+/* FEATURES */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.feature-card {
+  background: var(--glass);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+/* PREVIEW */
+.preview-card {
+  background: var(--glass);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-top: 20px;
+}
+
+.preview-screen {
+  background: var(--bg-light);
+  height: 300px;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-placeholder {
+  color: var(--text-dim);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px 0;
+  color: var(--text-dim);
+}
+
+.footer {
+  margin-top: 80px;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-row {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 20px;
+}
+
+.footer-row a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
+}
+
+.footer-row a:hover {
+  color: var(--primary);
+}
+
+.footer-copy {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 12px;
+  margin-top: 10px;
+}
